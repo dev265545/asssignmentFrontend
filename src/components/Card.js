@@ -25,7 +25,7 @@ function Card({ id }) {
   }
   const user = data.data.data;
   return (
-    <div className="container">
+    <div key={user.id} className="container">
       <div className="card">
         <img src={user.avatar} alt="Person" className="card__image" />
         <p className="card__name">{user.first_name + "  " + user.last_name}</p>

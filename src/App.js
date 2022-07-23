@@ -95,7 +95,7 @@ export default function App() {
           <div className="maindiv">
             {fetch2.data.map((user) => {
               return (
-                <div>
+                <div key={user.id}>
                   {" "}
                   <button
                     onClick={() => {
