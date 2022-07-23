@@ -12,6 +12,17 @@ function Card({ id }) {
       </div>
     );
   }
+  if (data.isFetching || data.isUninitialized) {
+    return (
+      <div className="container">
+        <div className="card_intital">
+          <p className="card__name">
+            <div className="loader"></div>
+          </p>
+        </div>
+      </div>
+    );
+  }
   if (data.isError) {
     return (
       <div className="container">

@@ -17,6 +17,7 @@ export const postApi = createApi({
     getPostById: builder.query({
       query: (id) => {
         return {
+          mode: "cors",
           url: `users/${id}`,
           method: "GET",
         };
