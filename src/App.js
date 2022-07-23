@@ -33,7 +33,7 @@ export default function App() {
   if (responseInfo.isLoading) {
     return (
       <div className="container">
-        <div className="loader">Loading</div>
+        <div className="loader"></div>
       </div>
     );
   }

@@ -8,7 +8,7 @@ function Card({ id }) {
   if (data.isLoading) {
     return (
       <div className="container">
-        <div className="loader">Loading</div>
+        <div className="loader"></div>
       </div>
     );
   }
